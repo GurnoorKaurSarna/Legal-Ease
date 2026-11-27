@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to the Legal Ease case management workspace">
+  <title>Sign in | Legal Ease</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="login-screen" id="loginScreen">
+    <div class="login-visual">
+      <a class="auth-brand" href="index.html"><span class="auth-logo">L</span><span>Legal Ease<small>LEGAL CASE MANAGEMENT</small></span></a>
+      <div class="login-visual-copy"><p>YOUR PRACTICE, IN ORDER</p><h1>Legal work,<br><em>with clarity.</em></h1><span>Cases, clients and court dates—together in one thoughtfully organised workspace.</span></div>
+      <div class="login-art" aria-hidden="true"><div class="art-circle"></div><div class="art-scale">⚖</div><div class="art-caption">ONE CALM PLACE FOR EVERY CASE</div></div>
+      <small class="login-legal-note">LEGAL EASE · ONLINE LEGAL CASE MANAGEMENT</small>
+    </div>
+    <div class="login-form-side">
+      <form id="loginForm" class="login-card">
+        <a class="back-to-landing" href="index.html">← Back to landing page</a>
+        <p class="login-kicker">WORKSPACE ACCESS</p><h2>Welcome back</h2><p class="login-sub">Sign in to continue to your workspace.</p>
+        <label for="loginEmail">Email address</label><input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="username" required>
+        <label for="loginPassword">Password</label><div class="password-box"><input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password" required><button id="togglePassword" type="button">Show</button></div>
+        <div class="login-options"><label><input id="rememberMe" type="checkbox"> Remember me</label></div>
+        <p id="loginError" class="login-error" role="alert" hidden></p><button id="loginSubmit" class="login-submit" type="submit"><span>Login</span><b>→</b></button>
+        <div class="demo-credentials"><strong>Demo credentials</strong><span>Email: vijaygupta@legalease.com</span><span>Password: vg_123</span></div>
+        <footer>Legal Ease <i>·</i> Online Legal Case Management System</footer>
+      </form>
+    </div>
+  </section>
+  <div class="auth-message-backdrop" id="recoveryDialog" hidden><section class="auth-message" role="dialog" aria-modal="true"><button type="button" class="auth-close" id="closeRecovery" aria-label="Close">×</button><span class="login-kicker">PASSWORD HELP</span><h2>Forgot password?</h2><p>Password recovery is not connected to a real email service in this student demo.</p><label for="recoveryEmail">Registered email</label><input id="recoveryEmail" type="email" placeholder="you@example.com"><button type="button" class="login-submit" id="recoveryOkay">Got it</button><small>No email will be sent.</small></section></div>
+  <script src="login.js"></script>
+</body>
+</html>
